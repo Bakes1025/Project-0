@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Successful Deposit</title>
+</head>
+<body>
+    <p>You have deposited ${{amount}}!</p>
+    <p>Your current balance is: ${{new_balance}}</p>
+    <a href = "{{url_for('.account_page',userid = id)}}"><button>Return to home</button></a>
+</body>
+</html>

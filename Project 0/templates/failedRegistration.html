@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <p>Enter your Username and Password</p>
+    <p style="color:red">Sign Up Failed</p>
+    <p style="color:red">Login details must fit these requirements:</p>
+    <p style="color:red">Username and Password must be 5-20 characters long.</p>
+    <p style="color:red">Username must be unique.</p>
+        <form action = "http://127.0.0.1:5000/registration/register" method = "POST">
+            <label for = "user_name">Username: </label>
+            <input type = "text" id = "user_name" name = "user_name"><br><br>
+            <label for ="user_pass">Password:&nbsp;</label>
+            <input type ="password" id = "user_pass" name = "user_pass"><br><br>
+            <label for = "first_name">First Name: </label>
+            <input type = "text" id = "first_name" name = "first_name"><br><br>   
+            <label for ="last_name">Last Name:&nbsp;</label>
+            <input type ="text" id = "last_name" name = "last_name"><br><br>
+            <input type = "submit" value = "Create Account">   
+        </form>
+    <a href="http://127.0.0.1:5000/"><button>Back</button></a>
+</html>

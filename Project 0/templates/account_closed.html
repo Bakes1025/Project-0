@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account successfully closed</title>
+</head>
+<body>
+    <div><h1>Welcome Back!</h1></div>
+    <p>You have successfully logged in, {{ username }}!</p>
+    <div>
+        <a href="http://127.0.0.1:5000/account/deposit">
+            <button>Deposit</button>
+        </a>
+        <a href="http://127.0.0.1:5000/account/withdraw">
+            <button>Withdraw</button>
+        </a>
+        <a href="http://127.0.0.1:5000/createBank">
+            <button>Open New Account</button>
+        </a>
+        <a href="http://127.0.0.1:5000/account/close">
+            <button>Close Existing Account</button>
+        </a>
+        <a href="http://127.0.0.1:5000/user/delete">
+            <button>Close User Account</button>
+        </a><a href="http://127.0.0.1:5000/">
+            <button>Logout</button>
+        </a>
+        <p>Account successfully closed.</p>
+    </div>
+</body>
+</html>

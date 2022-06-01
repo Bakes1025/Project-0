@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+</head>
+<body>
+    <h1>Are you sure you would like to delete your account?</h1>
+    <div>
+            <form action = "http://127.0.0.1:5000/user/delete/confirm" method = "POST">
+                <label for = "user_name">Username: </label>
+                <input type = "text" id = "user_name" name = "user_name"><br><br>
+                <label for ="user_pass">Password:&nbsp;</label>
+                <input type ="password" id = "user_pass" name = "user_pass"><br><br>
+                <input type = "submit" value = "Yes, Delete My Account">
+            </form>
+        <a href = "http://127.0.0.1:5000/login/user">
+            <button>No, I Changed my Mind</button>
+        </a>
+    </div>
+</body>
+</html>

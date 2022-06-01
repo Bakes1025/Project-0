@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failed Deposit</title>
+</head>
+<body>
+    <p style="color:red"> You may only deposit in positive increments and enter numbers in the account/routing number fields</p>
+    <form method = "POST" action = "http://127.0.0.1:5000/deposit/success">
+        <label for = "account_number">Account Number: </label>
+        <input type = "text" id = "account_number" name = "account_number"><br>
+        <label for = "Routing_number">Routing Number: </label>
+        <input type = "text" id = "routing_number" name = "routing_number"><br><br>
+        <p>How much would you like to deposit?</p>
+        <input type = "text" id = "deposit_amount" name = "deposit_amount"><br>
+        <input type = "submit" value = "Deposit">
+    </form>
+</body>
+</html>

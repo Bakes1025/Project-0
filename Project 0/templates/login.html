@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <p>Enter your Username and Password</p>
+        <form action = "http://127.0.0.1:5000/login/user" method = "POST">
+            <label for = "user_name">Username: </label>
+            <input type = "text" id = "user_name" name = "user_name"><br><br>
+            <label for ="user_pass">Password:&nbsp;</label>
+            <input type ="password" id = "user_pass" name = "user_pass"><br><br>
+            <input type = "submit" value = "Submit">
+        </form> 
+        <div>
+            <p>Dont have an account? Create one Here!</p>
+            <a href = "http://127.0.0.1:5000/registration">
+                <button>Register</button></a> 
+        </div>
+</body>
+</html>
